@@ -1,0 +1,29 @@
+//CSV file
+
+when running the application, make sure that the csv file that you are reading in the driver(String csvFilePath = "/home/cloudera/Desktop/staticData/carsData.csv";)
+matches the csv file location
+Also, make sure that the you assign the same topic to the producer and consumer(update the topic variable in the driver), and the same topic should be created in kafka suing the below commands.
+
+
+c//run kafka:
+bin/kafka-server-start.sh config/server.properties
+
+//start a topic:
+bin/kafka-topics.sh --create --topic newCar --bootstrap-server localhost:9092
+
+//kafka producer:
+ bin/kafka-console-producer.sh --topic newCar --bootstrap-server localhost:9092
+
+//kafka consumer:
+bin/kafka-console-consumer.sh --topic newCar --from-beginning --bootstrap-server localhost:9092
+
+
+HBase
+sudo service hbase-regionserver start
+sudo service hbase-master start
+
+
+
+
+
+
