@@ -1,0 +1,7 @@
+create database if not exists my_db;
+
+create table if not exists my_db.student(sId int, name String);
+insert into student(sId, name) values(1,'hari');
+insert into student(sId, name) values(2,'shyam');
+insert into student(sId, name) values(3,'Ram');
+insert into student(sId, name) values(4,'Kamal');

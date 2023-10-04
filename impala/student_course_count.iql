@@ -1,0 +1,3 @@
+select s.name, count(c.course) as no_of_courses from student s
+join course c on s.sId=c.sId
+group by s.name;

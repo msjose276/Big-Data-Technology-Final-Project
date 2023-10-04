@@ -1,0 +1,10 @@
+create table if not exists my_db.course(sId int, course String);
+insert into course(sId, course) values(1,'BDT');
+insert into course(sId, course) values(1,'DBMS');
+insert into course(sId, course) values(2,'Algorithm');
+insert into course(sId, course) values(2,'WAA');
+insert into course(sId, course) values(2,'SA');
+insert into course(sId, course) values(3,'SA');
+insert into course(sId, course) values(3,'BDT');
+insert into course(sId, course) values(3,'Algorithm');
+insert into course(sId, course) values(3,'MDP');
